@@ -41,17 +41,16 @@ a {
 }
 a:hover {
   color: darkgray;
-  
 }
 section {
   text-align: center;
 }
 
-.game--title {
+.game-title {
   margin: 10px auto;
 }
 
-.game--container {
+.game-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
   width: 306px;
@@ -70,16 +69,16 @@ section {
   font-size: 60px;
 }
 
-.game--status {
+.game-status {
   font-size: 50px;
-  color: #85ccec;
+  color: #3b3b3b;
   margin: 20px auto;
 }
 
-.game--restart {
+.game-restart {
   background-color: #8d8d8d;
   width: 200px;
   height: 50px;
   font-size: 25px;
-  color: #0058fc;
+  color: #eeeeee;
 }
