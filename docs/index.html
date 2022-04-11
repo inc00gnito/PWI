@@ -1,69 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWI</title>
+  <title>PWI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <ul>
-                <li class="nav-bar-item item-title">PWI</li>
-                <li class="nav-bar-item"><a href="#home"> Home</a></li>
-                <li class="nav-bar-item"><a href="#about">About</a></li>
-                <li class="nav-bar-item"><a href="#tic-tac-toe">Tic Tac Toe</a></li>
-            </ul>
-        </div>
-
-        <div class="header" id="home">
-            <h3>Lorem Ipsum</h3>
-        </div>
-
-        <div class="main" id="about">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra eu lectus sit amet faucibus.
-            Quisque imperdiet lorem nec sapien pellentesque scelerisque. Vestibulum magna felis, vestibulum at aliquet
-            id, venenatis quis lorem. Aliquam sed quam sapien. Suspendisse aliquam urna nec euismod volutpat. Proin
-            bibendum neque felis, quis vestibulum dui ornare eu. Sed semper elementum congue. Vivamus pellentesque
-            auctor pulvinar. Curabitur posuere faucibus varius.
-
-            Proin sollicitudin mi ac odio faucibus, eu faucibus metus fringilla. Mauris sollicitudin, lectus at
-            ultricies euismod, nunc tellus hendrerit quam, non vehicula libero enim sit amet ex. Pellentesque habitant
-            morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas venenatis placerat nibh ut
-            porttitor. Cras aliquam eleifend enim nec rhoncus. Nulla gravida elementum dapibus. Ut pellentesque quam vel
-            suscipit placerat.
-            <p class="img"><img src="coffee.jpg" alt="Coffe cup"> </p>
-        </div>
-
-
-        <div id="tic-tac-toe">
-            <section>
-                <h1 class="game-title">Tic Tac Toe</h1>
-                <div class="game-container">
-                    <div data-cell-index="0" class="cell"></div>
-                    <div data-cell-index="1" class="cell"></div>
-                    <div data-cell-index="2" class="cell"></div>
-                    <div data-cell-index="3" class="cell"></div>
-                    <div data-cell-index="4" class="cell"></div>
-                    <div data-cell-index="5" class="cell"></div>
-                    <div data-cell-index="6" class="cell"></div>
-                    <div data-cell-index="7" class="cell"></div>
-                    <div data-cell-index="8" class="cell"></div>
-                </div>
-                <h2 class="game-status"></h2>
-                <button class="game-restart">Restart Game</button>
-            </section>
-        </div>
-
-
-
+  <nav class="nav-wrapper">
+    <div class="logo">
+      <i class="fas fa-atom"></i> <strong>PWI</strong>
     </div>
-    <script src="script.js"></script>
+    <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
+    <ul class="nav-items main-nav mobile-hide">
+      <li class="list-item"><a href="#meta">Home</a></li>
+      <li class="list-item"><a href="#side-bar">Gallery</a></li>
+      <li class="list-item"><a href="#main-content">Articles</a></li>
+      <li class="list-item"><a href="#side-bar">About us</a></li>
+    </ul>
+  </nav>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <div class="featured">
+        <div id="meta">Lorem ipsum</div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus commodo est, ut euismod nisl porttitor
+          a. </h1>
+      </div>
+      <div class="sub-featured">
+        <div class="sub1">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus commodo est, ut euismod nisl
+            porttitor
+            a. </h3>
+        </div>
+        <div class="sub2">
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus commodo est, ut euismod nisl
+            porttitor
+            a. </h3>
+        </div>
+        <div class="sub3">
+          <h3>Lorem ipsum dolor sit amet. </h3>
+        </div>
+      </div>
+      <div class="main-content" id="main-content">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin luctus commodo est, ut euismod nisl porttitor
+          a. Donec volutpat sem quis aliquet ultrices. Sed sit amet tristique erat, sed iaculis orci. Nunc dignissim
+          maximus ipsum in vehicula. Sed condimentum dolor tellus, interdum consectetur tellus imperdiet quis. In
+          posuere purus ac lorem hendrerit, nec elementum lacus tincidunt. Nulla imperdiet eu tortor sit amet sodales.
+          Fusce mollis lectus rutrum diam mattis, nec vestibulum nulla facilisis. Vivamus vel tellus sollicitudin,
+          vestibulum ipsum nec, cursus justo. Fusce lobortis quis orci eget ullamcorper. Ut felis nisi, scelerisque in
+          consequat interdum, bibendum sed lectus. Fusce consequat urna nulla, in tempor libero dignissim nec.
+
+          Suspendisse potenti. Donec tortor felis, condimentum a justo vitae, cursus porta massa. Suspendisse potenti.
+          Ut at porttitor nunc. Integer sagittis tellus porta, malesuada tortor posuere, pellentesque enim. Integer eget
+          nisl vel nisl facilisis rutrum. Suspendisse dui nulla, venenatis sit amet mauris ac, elementum pellentesque
+          arcu. Nullam bibendum mattis nisi, ut pulvinar nulla sodales sit amet. Cras nibh nisl, aliquet eu dignissim
+          nec, eleifend sit amet justo. </p>
+        <p> Ut quis tempor dui. Duis porta maximus est, volutpat faucibus nunc condimentum et. In a ultrices ligula.
+          Cras facilisis velit enim, vel mattis enim porttitor eu. Mauris tempor orci orci, eu condimentum odio semper
+          vitae. Nam interdum varius massa, a eleifend purus volutpat convallis. Integer posuere odio vitae consequat
+          finibus. Integer posuere, ipsum non sagittis sagittis, purus dolor luctus erat, eu iaculis magna tellus et
+          lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque
+          magna sapien, dictum vitae nibh vitae, condimentum tincidunt sapien.
+
+          Integer eu euismod felis, sit amet vestibulum nisi. Pellentesque a tortor sed nibh congue facilisis. Duis
+          vulputate efficitur mollis. Proin varius risus et libero volutpat feugiat. Sed quis dignissim orci. Praesent
+          at risus ac lacus egestas rhoncus. Fusce auctor quis ligula quis ultrices. In ac tempus metus, nec ultrices
+          sapien. Proin ac felis a ipsum varius volutpat. Nulla luctus condimentum finibus. In sodales vehicula metus at
+          elementum. Aenean facilisis eu quam nec consectetur. Praesent porta dui congue posuere bibendum. Proin luctus,
+          odio in pulvinar porttitor, turpis purus iaculis sem, eget tincidunt mauris mauris eu quam. </p>
+      </div>
+      <div class="main-sidebar" id="side-bar">
+        <p> Ut quis tempor dui. Duis porta maximus est, volutpat faucibus nunc condimentum et. In a ultrices ligula.
+          Cras facilisis velit enim, vel mattis enim porttitor eu. Mauris tempor orci orci, eu condimentum odio semper
+          vitae. Nam interdum varius massa, a eleifend purus volutpat convallis. Integer posuere odio vitae consequat
+          finibus. Integer posuere, ipsum non sagittis sagittis, purus dolor luctus erat, eu iaculis magna tellus et
+          lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque
+          magna sapien, dictum vitae nibh vitae, condimentum tincidunt sapien.
+
+          Integer eu euismod felis, sit amet vestibulum nisi. Pellentesque a tortor sed nibh congue facilisis. Duis
+          vulputate efficitur mollis. Proin varius risus et libero volutpat feugiat. Sed quis dignissim orci. Praesent
+          at risus ac lacus egestas rhoncus. Fusce auctor quis ligula quis ultrices. In ac tempus metus, nec ultrices
+          sapien. Proin ac felis a ipsum varius volutpat. Nulla luctus condimentum finibus. In sodales vehicula metus at
+          elementum. Aenean facilisis eu quam nec consectetur. Praesent porta dui congue posuere bibendum. Proin luctus,
+          odio in pulvinar porttitor, turpis purus iaculis sem, eget tincidunt mauris mauris eu quam. </p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="foot1">
+      <h3 class="logo">Lorem Ipsum Title</h3>
+    </div>
+    <div class="foot2">
+      <h4>Lorem Ipsum</h4>
+    </div>
+    <div class="foot3">
+      <h4>Lorem Ipsum</h4>
+    </div>
+    <div class="foot4">
+      <h4>Lorem Ipsum</h4>
+    </div>
+  </footer>
 </body>
 
 </html>
